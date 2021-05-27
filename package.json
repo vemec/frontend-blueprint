@@ -1,6 +1,6 @@
 {
   "name": "frontend-blueprint",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "frontend-blueprint",
   "main": "index.js",
   "scripts": {
