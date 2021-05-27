@@ -1,0 +1,10 @@
+// Table
+@include tablet-768 {}
+
+// Desktop
+@include desktop-1024 {
+  @include banner--desktop-1024();
+}
+
+// Big desktops
+@include desktop-1280 {}

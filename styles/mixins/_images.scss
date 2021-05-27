@@ -1,0 +1,24 @@
+// Image
+@mixin set-image($path, $image-name, $extension) {
+  @content;
+  background-image: url('/images/#{$path}/#{$image-name}@1x.#{$extension}');
+  background-repeat: no-repeat;
+  background-image: image-set(
+    url('/images/#{$path}/#{$image-name}@1x.#{$extension}') 1x,
+    url('/images/#{$path}/#{$image-name}@2x.#{$extension}') 2x
+  );
+}
+
+@mixin webp-nowebp($element-selector, $path, $image-name, $extension) {
+  body[class='no-webp'] {
+    #{$element-selector} {
+      @include set-image($path, $image-name, $extension) { @content; };
+    }
+  }
+
+  body[class='webp'] {
+    #{$element-selector} {
+      @include set-image($path, $image-name, 'webp') { @content; };
+    }
+  }
+}

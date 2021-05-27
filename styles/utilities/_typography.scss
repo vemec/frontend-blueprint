@@ -1,0 +1,20 @@
+.light { font-weight: $font-weight-light; }
+.regular { font-weight: $font-weight-regular; }
+.medium { font-weight: $font-weight-medium; }
+.semibold { font-weight: $font-weight-semibold; }
+.bold { font-weight: $font-weight-bold; }
+.extra-bold { font-weight: $font-weight-extra-bold; }
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.center { text-align: center; }
+
+.abril { font-family: 'Abril Fatface', cursive; }
+.alfa { font-family: 'Alfa Slab One', cursive; }
+.caveat { font-family: 'Caveat', cursive; }
+.jet { font-family: 'JetBrains Mono', monospace; }
+.work { font-family: 'Work Sans', sans-serif; }

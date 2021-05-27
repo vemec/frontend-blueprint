@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# build
+.next
+
+# public
+/public/workbox-*.js
+/public/workbox-*.js.map
+/public/sw.js
+/public/sw.js.map
+
+# Dependencies
+node_modules
+.eslintcache
+
+# Trash
+.DS_Store
+.vscode
+
+.vercel
+.env.local
