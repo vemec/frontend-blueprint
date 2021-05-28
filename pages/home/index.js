@@ -1,5 +1,6 @@
 // Core
 import useTranslation from 'next-translate/useTranslation'
+import Link from 'next/link'
 
 // Layout
 import Layout from '@/layout/public'
@@ -13,9 +14,17 @@ const HomePage = () => {
     keywords: 'keywords',
   }
 
+  const currentLang = lang === 'es' ? 'en' : 'es';
+
   return (
     <Layout current={current} lang={lang}>
-      { t('translate') }
+      { t('example') }
+      <br />
+      <Link href={`/${currentLang}`} locale={currentLang}>
+        <a href={`/${currentLang}`}>
+          { t('change-locale') }
+        </a>
+      </Link>
     </Layout>
   )
 }
